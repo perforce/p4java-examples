@@ -1,7 +1,3 @@
-# P4Java - We've Moved!
-
-P4Java is now available from [Maven Central](https://repo1.maven.org/maven2/com/perforce/p4java/).  It is no longer maintained here in The Workshop.
-
 # P4Java build instructions
 
 ## Prerequisites:
