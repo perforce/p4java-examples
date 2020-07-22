@@ -1,0 +1,20 @@
+// Create depot
+
+// ensure you are connected and logged in to a perforce server before following this example, see login example for instructions on how to do this.
+
+//Create depot object
+IDepot depot = new Depot(
+	"exampleDepot" //depotName
+	server.getUserName(), //depotUser
+	null, //modtime
+	"exampleDescription", //depotDescription
+	DepotType.LOCAL, //depotType
+	null, //address
+	null, //suffix
+	null, //streamDepth
+	"exampleDepot/...", //depotMap
+	null //specMap
+);
+
+//Create depot on perforce server
+server.createDepot(depot);

@@ -1,0 +1,22 @@
+//Create user
+
+// Ensure you are connected and logged in to a perforce server before following this example, see login example for instructions on how to do this.
+
+//Create user object
+IUser newUser = new User(
+	"exampleUser", //username
+	"exampleUser@Example.com", //email
+	"Example User, //full name
+	null, //access date
+	null, //update date
+	"examplePassword", //password
+	null, //job view
+	UserType.STANDARD, //user type
+	null // review subscriptions
+);
+
+//Create user on perforce server using user object
+String message = superServer.createUser(newUser, true);
+
+//Get the new user
+newUser = server.getUser(newUserName);

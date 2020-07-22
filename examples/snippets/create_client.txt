@@ -1,0 +1,18 @@
+// Create perforce workspace
+
+// Ensure you are connected and logged in to a perforce server before following this example, see login example for instructions on how to do this.
+
+//Create a client object
+IClient client = Client.newClient(
+	server, //p4java server object
+	"exampleClient", // client name
+	"exampleDescription", //client description
+	"/home/example/workspace/root", //client root
+	new String[]{"//depot/... //exampleClient/..."} // client mappings
+)
+
+//Create client on perforce server using client object
+server.createClient(client);
+
+//Sets the active client to newly created client
+server.setCurrentClient(client);

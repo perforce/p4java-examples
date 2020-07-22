@@ -1,0 +1,28 @@
+// Create & submit a changelist
+
+// Ensure you are connected and logged in to a perforce server before following this example, see login example for instructions on how to do this.
+
+//Create changelist object
+IChangelist change = new Changelist(
+	server, //Perforce server object
+	"exampleClient", //Client associated with this changelist
+	"exampleDescription" //description for changelist
+);
+
+//Create changelist on server
+change = client.createChangelist(change);
+
+//Create a filespec for the file being added to changelist
+List<IFileSpec> fileSpecs = FileSpecBuilder.makeFileSpecList("home/example/root/exampleFile");
+
+//Create a file options object for changelist
+AddFilesOptions addOpts = new AddFilesOptions();
+
+//Set the file options changelist Id to that of the changelist
+addOpts.setChangelistId(change.getId());
+
+//Add files tothe changelist using "client.addFiles" and passing filespec and file options objects
+client.addFiles(fileSpecs, addOpts);
+
+//Submit changelist
+change.submit(false);

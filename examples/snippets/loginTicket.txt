@@ -1,0 +1,20 @@
+// log in and get server info using ticket
+
+
+// assign a server object from a URL
+server = ServerFactory.getOptionsServer("examplePerforceServer:1666", null);
+
+//Connect to the perforce server
+server.connect();
+
+//Set the user that is to be used 
+server.setUserName("exampleUser");
+
+//Set the ticket on the perforce server using a perforce ticketfor the user from the previous step
+server.setAuthTicket("exampleTicket");
+
+//Check that you are logged in 
+server.getLoginStatus()
+
+//Returns the server information
+server.getServerInfo()
