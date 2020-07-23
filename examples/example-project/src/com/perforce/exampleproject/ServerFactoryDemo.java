@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.perforce.exampleproject.;
+package com.perforce.exampleproject;
 
 import com.perforce.p4java.exception.P4JavaException;
 import com.perforce.p4java.exception.RequestException;
