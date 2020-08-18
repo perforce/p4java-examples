@@ -1,8 +1,8 @@
-[![Support](https://img.shields.io/badge/Support-Official-green.svg)](mailto:support@perforce.com)
+[![Unsupported](https://img.shields.io/badge/Support-Example-red.svg)](mailto:support@perforce.com)
 
 # P4Java Examples
 
-A set of code snippets and examples demonstrating how to use the `p4java` API.
+A set of code snippets and examples demonstrating how to use the `p4java` API.  For more information please refer to the Perforce P4Java [Developer Guide](https://www.perforce.com/manuals/p4java/Content/P4Java/Home-p4java.html).
 
 ## Maven
 
