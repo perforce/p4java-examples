@@ -1,4 +1,4 @@
-[![Unsupported](https://img.shields.io/badge/Not Supported-Example-red.svg)](mailto:support@perforce.com)
+[![Unsupported](https://img.shields.io/badge/Unsupported-Example-red.svg)](mailto:support@perforce.com)
 
 # P4Java Examples
 
