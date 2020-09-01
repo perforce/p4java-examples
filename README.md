@@ -1,4 +1,4 @@
-![Unsupported](https://img.shields.io/badge/Unsupported-Example-red.svg)
+![Unsupported](https://img.shields.io/badge/Support-Unsupported-red.svg)
 
 # P4Java Examples
 
