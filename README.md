@@ -2,6 +2,8 @@
 
 # P4Java Examples
 
+This project is a reference/example and provided as-is. Perforce offers no support for issues (either via GitHub nor via Perforce's standard support process).  All pull requests will be ignored.
+
 ## Overview
 A set of code snippets and examples demonstrating how to use the `p4java` API.
 
